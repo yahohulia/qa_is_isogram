@@ -25,6 +25,12 @@ describe('isIsogram', () => {
     expect(result).toBeFalsy();
   });
 
+  it("returns false for 'Oops'", () => {
+    const result = isIsogram('Oops');
+
+    expect(result).toBeFalsy();
+  });
+
   it(`should be true for empty string`, () => {
     const result = isIsogram('');
 
